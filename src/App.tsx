@@ -1,11 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import RootLayout from "./_root/RootLayout";
-import { Home } from "./_root/pages";
+import { Home, Test1 } from "./_root/pages";
+
 
 function App() {
   return (
     <>
-      <main>
+      <main className="h-screen w-screen">
         <Routes>
           {/* Public Routes */}
           {/* <Route element={<AuthLayout />}>
@@ -16,6 +17,7 @@ function App() {
           {/* Private Routes */}
           <Route element={<RootLayout />}>
             <Route path="/" element={<Home />} />
+            <Route path="/Test1" element={<Test1 />} />
           </Route>
         </Routes>
       </main>
